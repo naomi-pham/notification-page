@@ -1,4 +1,4 @@
-This is a challenge by [Frontend Mentor](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC/hub/notification-page-using-nextjs-and-tailwind-7l70TIl20X) - a platform to hone Javascript skills. 
+This is a challenge by [Frontend Mentor](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC/hub/notification-page-using-nextjs-and-tailwind-7l70TIl20X) - a platform to improve your frontend skills by building real projects.
 
 I'm applying some strategies to reduce Tailwind CSS codes, one of which is Cube-CSS by [Andy Bell](https://cube.fyi/). (Do check this out! It is a brilliant CSS methodology). 
 
