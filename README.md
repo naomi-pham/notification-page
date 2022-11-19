@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a challenge by [Frontend Mentor](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC/hub/notification-page-using-nextjs-and-tailwind-7l70TIl20X) - a platform to hone Javascript skills. 
 
-## Getting Started
+I'm applying some strategies to reduce Tailwind CSS codes, one of which is Cube-CSS by [Andy Bell](https://cube.fyi/). (Do check this out! It is a brilliant CSS methodology). 
 
-First, run the development server:
+For example, I created a **stack** CSS class inside the **styles/compositions** folder for repeated Tailwind utility classes such as `flex flex-col gap-8` with modifications stack-sm (gap-4) and stack-xs (gap-2). 
 
-```bash
-npm run dev
-# or
-yarn dev
+```css
+.stack {
+   display: flex;
+   flex-direction: column;
+   gap: var(--col-space, 2rem);
+}
+
+.stack-sm {
+   --col-space: 1rem;
+}
+
+.stack-xs {
+   --col-space: .5rem;
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Applying to the main code: 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```jsx
+<div classname="stack"> // (flex flex-col gap-8)
+   <card 1>
+   <card 2>
+   <card 3>
+</div>
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The long windy code is disheartening sometimes, but I really like using Tailwind in general as it makes coding responsive website so simple and intuitive. For instance, to adjust the padding for different screen sizes, I can just write `p-4 sm:p-8 lg:p-24` instead of creating two separate **@media-queries**.
