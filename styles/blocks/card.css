@@ -1,0 +1,67 @@
+.card {
+    border-radius: .75rem;
+    padding: 1rem;
+}
+
+.card:hover {
+    background: hsl(var(--color-accentLight1));
+    cursor: pointer;
+}
+
+.card-user:hover, 
+.card-group:hover, 
+.card-post:hover {
+    cursor: pointer;
+}
+
+.card-action,
+.card-user {
+    margin-right: .25rem;
+}
+
+.card-user,
+.card-post,
+.card-group {
+    font-weight: 800;
+}
+
+.card-user {
+    color: hsl(var(--color-dark));
+    font-weight: 800;
+}
+
+.card-user:hover {
+    color: hsl(var(--color-secondary));
+}
+
+.card-action {
+    opacity: 80%;
+}
+
+.card-post {
+    color: hsl(var(--color-light));
+}
+
+.card-group {
+    color: hsl(var(--color-secondary));
+}
+
+.card-unread {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 100%;
+    background-color: hsl(var(--color-primary));
+    display: inline-block;
+    margin-left: .5rem;
+}
+
+.card-time {
+    display: block;
+}
+
+.card-message {
+    border: 1px solid hsl(var(--color-accentDark1) / 0.4);
+    border-radius: .5rem;
+    padding: .75rem;
+    margin-top: 1rem;
+}
