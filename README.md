@@ -38,20 +38,16 @@ The long windy code is disheartening sometimes, but I really like using Tailwind
 
 The objective of the project is to differentiate unread and read messages as well as mark all projects as read on click. Here's my steps to achieve it: 
 
-### 1. Create a Card component
+1. Create a Card component - [Card.js](https://github.com/naomi-pham/notification-page/blob/main/components/Card/Card.js)
 
-[Card.js](https://github.com/naomi-pham/notification-page/blob/main/components/Card/Card.js)
+2. Create the main logic in [index.js](https://github.com/naomi-pham/notification-page/blob/main/pages/index.js) file
 
-### 2. Set a `Messages` variable that takes Data (Array of notification messages) as the intialized state. 
+- Set a `Messages` variable that takes Data (Array of notification messages) as the intialized state. 
 
-### 3. Set a count variable that counts the number of unread messages in Data.
+- Set a count variable that counts the number of unread messages in Data.
 
-### 4. Create a `handleMark` function that returns the same `Messages` array but with message that has `isRead: true` switched to `isRead: false`
+- Create a `handleMark` function that returns the same `Messages` array but with message that has `isRead: true` switched to `isRead: false` -
 
-[index.js](https://github.com/naomi-pham/notification-page/blob/main/pages/index.js)
-
-### 5. Pass `count` and `handleMark` to the Header components to display the number of unread messages and trigger `Mark all as read`
-
-[Header.js](https://github.com/naomi-pham/notification-page/blob/main/components/Header/Header.js)
+5. Pass `count` and `handleMark` to the Header components to display the number of unread messages and trigger `Mark all as read` - [Header.js](https://github.com/naomi-pham/notification-page/blob/main/components/Header/Header.js)
 
 
