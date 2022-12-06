@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 const CardWrapper = ({children, isUnread}) => {
     return (
-        <div className={`card ${isUnread ? "bg-accentLight1/60" : "bg-white" } flex gap-4 text-sm sm:text-lg`}>
+        <section className={`card ${isUnread ? "bg-accentLight1/60" : "bg-white" } flex gap-4 text-sm sm:text-lg`}>
             {children}
-        </div>
+        </section>
     )
 }
 
